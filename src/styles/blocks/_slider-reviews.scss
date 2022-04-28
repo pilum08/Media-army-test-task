@@ -1,0 +1,14 @@
+.slider-reviews {
+    &__pic {
+        height: rem(60px);
+        width: rem(182px);
+    }
+    &__arrows {
+        display: flex;
+        position: absolute;
+        left: 84%;
+        bottom: 81%;
+        width: rem(125px);
+        justify-content: space-between;
+    }
+}

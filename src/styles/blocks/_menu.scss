@@ -1,0 +1,50 @@
+.menu {
+    font-size: 0.53rem;
+    width: 22.1rem;
+    margin: 0 40px;
+    @include tablets {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @include tablets {
+            justify-content: flex-start;
+            font-size: 19px;
+        }
+    }
+    &__chevron {
+        display: inline;
+    }
+    &__pic-up {
+        display: none;
+        transform: rotate(270deg);
+        width: 5px;
+        height: 10px;
+        fill: none;
+        stroke: #2c2c2c;
+    }
+    &__pic-down {
+        transform: rotate(90deg);
+        width: 5px;
+        height: 10px;
+        fill: none;
+        stroke: #2c2c2c;
+    }
+    &__item {
+        &--arrows {
+            &:hover .menu__pic-up {
+                display: inline;
+            }
+            &:hover .menu__pic-down {
+                display: none;
+            }
+        }
+    }
+}
+
+.menu__item--arrows:hover .hero__title {
+    color: black;
+}

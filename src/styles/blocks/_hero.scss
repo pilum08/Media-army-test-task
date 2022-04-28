@@ -1,0 +1,78 @@
+.hero {
+    position: relative;
+    &__content {
+        max-height: rem(650px);
+        padding-top: rem(80px);
+        padding-bottom: rem(60px);
+        background-color: #313232;
+        @include tablets {
+            padding-bottom: rem(60px);
+        }
+        &-wrapper {
+            display: flex;
+            @include tablets {
+                flex-direction: column;
+                background-color: #313232;
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: rem(650px);
+        color: #fff;
+        @include tablets {
+            padding-bottom: 60px;
+        }
+    }
+    &__title {
+        font-weight: 400;
+        font-size: rem(67px);
+        line-height: 0.9;
+        padding-bottom: rem(40px);
+        @include tablets {
+            font-size: rem(44px);
+        }
+    }
+    &__tel-num {
+        font-size: rem(67px);
+        color: #fec110;
+        @include tablets {
+            font-size: rem(44px);
+        }
+    }
+    &__shedule {
+        margin-top: rem(40px);
+        margin-bottom: rem(60px);
+    }
+    &__shedule-title {
+        display: block;
+        font-size: 16px;
+        color: #989898;
+    }
+    &__shedule-text {
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    &__button {
+        color: #2c2c2c;
+        width: rem(256px);
+        height: rem(60px);
+        &:hover {
+            background-color: #fff;
+        }
+        &:hover .hero__icon {
+            transform: translateY(5px);
+            transition: 500ms;
+        }
+    }
+    &__icon {
+        width: rem(12px);
+        height: rem(13px);
+        stroke: #2c2c2c;
+        margin-left: rem(10px);
+    }
+}

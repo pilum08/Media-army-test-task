@@ -1,0 +1,20 @@
+.address {
+    display: flex;
+    width: 62%;
+    @include tablets {
+        width: 100%;
+    }
+    &__wrapper {
+        width: 38%;
+        margin-right: rem(40px);
+    }
+    &__title {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__data {
+        color: #989898;
+        font-size: 14px;
+    }
+}

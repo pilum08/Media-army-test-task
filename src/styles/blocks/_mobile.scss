@@ -1,0 +1,51 @@
+.mobile {
+    display: flex;
+    max-height: rem(180px);
+    background: #fec110;
+    @include tablets {
+        max-height: 100%;
+        padding: 40px 0;
+    }
+    &__container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__header {
+        font-size: rem(21px);
+        @include tablets {
+            font-size: rem(19px);
+        }
+    }
+    &__img {
+        @include tablets {
+            display: none;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    &__item {
+        height: rem(24px);
+        @include tablets {
+            margin-bottom: 15px;
+        }
+        &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 10px;
+            width: 24px;
+            height: 18px;
+            background: url('../../images/svg/checkMark.svg');
+            background-repeat: no-repeat;
+        }
+    }
+    &__app {
+        display: flex;
+        margin-right: 18px;
+    }
+}

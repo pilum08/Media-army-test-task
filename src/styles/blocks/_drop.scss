@@ -1,0 +1,23 @@
+.drop-menu {
+    display: flex;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    height: rem(295px);
+    width: 100%;
+    border-top: 1px #fec110 solid;
+    z-index: 105;
+    &__item {
+        margin-bottom: 15px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &--hidden {
+        display: none;
+    }
+}

@@ -1,0 +1,50 @@
+.slider-stocks {
+    position: relative;
+    &__item {
+        display: flex;
+        background: #e5e5e5;
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+    &__img {
+        margin-right: 2%;
+        width: 66%;
+        @include tablets {
+            width: 100%;
+            margin-bottom: rem(40px);
+        }
+    }
+    &__content {
+        flex: 1;
+    }
+    &__title {
+        font-size: rem(51px);
+        line-height: 0.96;
+        margin-bottom: 3.5%;
+        @include tablets {
+            font-size: rem(38px);
+        }
+    }
+    &__date {
+        font-size: 16px;
+        color: #989898;
+        margin-bottom: 7%;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        @include tablets {
+            background-color: #fec110;
+            border: none;
+        }
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+    }
+    &__button-text {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+}

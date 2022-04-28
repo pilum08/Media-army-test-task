@@ -1,0 +1,27 @@
+.stocks {
+    padding-bottom: rem(188px);
+    @include tablets {
+        padding-bottom: rem(120px);
+    }
+    &__header {
+        font-size: rem(67px);
+        margin-bottom: rem(60px);
+    }
+    &__container {
+        position: relative;
+        display: flex;
+    }
+    &__arrows {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top: 78%;
+        left: 68%;
+        width: rem(125px);
+        z-index: 25;
+        @include tablets {
+            top: 50%;
+            left: 77.2%;
+        }
+    }
+}

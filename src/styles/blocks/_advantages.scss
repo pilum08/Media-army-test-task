@@ -1,0 +1,41 @@
+.advantages {
+    display: flex;
+    margin-bottom: rem(60px);
+    @include tablets {
+        flex-direction: column;
+    }
+    &__article {
+        width: 50%;
+        margin-right: rem(40px);
+        @include tablets {
+            width: 100%;
+            margin-bottom: rem(40px);
+        }
+    }
+    &__header {
+        margin-bottom: rem(40px);
+    }
+    &__text {
+        font-size: rem(16px);
+    }
+    &__article p {
+        margin-bottom: rem(20px);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 13%;
+        width: 45%;
+        font-size: 21px;
+        @include tablets {
+            width: 86%;
+        }
+    }
+    &__icon {
+        width: rem(60px);
+        height: rem(60px);
+    }
+}

@@ -1,0 +1,73 @@
+.route {
+    max-height: 600px;
+    transform: translateY(-55%);
+    @include tablets {
+        transform: none;
+        background-color: #313232;
+        max-height: none;
+    }
+    &__container {
+        flex-direction: row;
+        height: 600px;
+        @include tablets {
+            position: relative;
+            height: auto;
+            flex-direction: column;
+        }
+    }
+    &__info {
+        background-color: #313232;
+        width: 31%;
+        @include tablets {
+            order: 2;
+            width: 100%;
+        }
+    }
+    &__contacts {
+        font-size: 16px;
+        color: #fff;
+        padding: 7.6%;
+        @include tablets {
+            padding: 4.6%;
+        }
+    }
+    &__img {
+        background: url('../../images/slider1.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 52%;
+        @include tablets {
+            display: none;
+        }
+    }
+    &__map {
+        width: 69%;
+        height: 100%;
+        &-pic {
+            height: 100%;
+        }
+        @include tablets {
+            display: none;
+        }
+    }
+    &__map--mobile {
+        display: none;
+        @include tablets {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__phone {
+        padding-bottom: 20px;
+    }
+    &__button {
+        padding: 30px 41px;
+        margin-bottom: 6.6%;
+        margin-left: 7%;
+        @include tablets {}
+        &-text {
+            margin-right: 10px;
+        }
+    }
+}

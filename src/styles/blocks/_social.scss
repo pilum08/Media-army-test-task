@@ -1,0 +1,29 @@
+.social-network {
+    margin-right: 11%;
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(20px);
+        margin-top: rem(40px);
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        padding-right: 10px;
+        &:last-child {
+            padding: 0;
+        }
+        cursor: pointer;
+    }
+    &__icon {
+        height: rem(60px);
+        width: rem(60px);
+        fill: #313232;
+        stroke: #fff;
+        &:hover {
+            fill: #fff;
+            stroke: #313232;
+            transition: 400ms;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.footer {
+    color: #fff;
+    background: #313232;
+    padding-top: 60px;
+    //max-height: 639px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__feedback {
+        display: flex;
+        flex-direction: column;
+        @include tablets {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__menu {
+        font-size: 21px;
+        min-width: 37%;
+        @include tablets {
+            display: flex;
+            margin: 0;
+        }
+    }
+    &__menu .menu__item {
+        margin-right: 20px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &__login {
+        font-size: 21px;
+        @include tablets {
+            font-size: 19px;
+        }
+        &-txt {
+            &::after {
+                content: "";
+                display: inline-block;
+                height: 19px;
+                width: 24px;
+                background: url("../../images/svg/arr.svg");
+                margin-left: 10px;
+            }
+        }
+    }
+    &__shedule {
+        font-size: 16px;
+        color: #989898;
+        margin-bottom: 20px;
+        @include tablets {}
+    }
+    &__email {
+        font-size: 21px;
+    }
+    &__btns {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include tablets {
+            flex-direction: row;
+            width: rem(311px);
+        }
+    }
+    &__button {
+        width: rem(220px);
+        height: rem(50px);
+        @include tablets {
+            width: rem(153px);
+        }
+        margin-bottom: 5px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        margin-top: rem(40px);
+        max-width: 21.428571rem;
+        margin-left: 4%;
+        @include tablets {
+            margin-left: 0;
+        }
+    }
+    &__list-wrapper {
+        margin-right: rm(40px);
+        width: 40%;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &__contacts {
+        display: flex;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+    &__bottomline {
+        height: rem(100px);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #989898;
+        border-top: 1px #989898 solid;
+    }
+}

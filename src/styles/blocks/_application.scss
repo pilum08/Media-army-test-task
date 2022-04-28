@@ -1,0 +1,31 @@
+.application {
+    max-height: rem(690px);
+    background: url('../../images/app.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 10% 0;
+    &__header {
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-top: 10px;
+        border-top: 1px #fff solid;
+    }
+    &__content {
+        padding-top: 9%;
+        padding-left: 50%;
+        @include tablets {
+            padding-left: 0;
+        }
+    }
+    &__text {
+        margin-bottom: 40px;
+    }
+    &__button {
+        width: rem(229px);
+        height: rem(60px);
+        color: #2c2c2c;
+        padding-bottom: 2px;
+    }
+}

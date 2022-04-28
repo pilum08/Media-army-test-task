@@ -1,0 +1,15 @@
+.burger {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: rem(20px);
+    @include tablets {
+        margin-right: 0;
+        margin-left: rem(20px);
+        order: 2;
+    }
+    &__pic {
+        width: rem(36px);
+        height: rem(24px);
+        stroke: #000;
+    }
+}
